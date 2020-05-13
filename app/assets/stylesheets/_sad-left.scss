@@ -33,16 +33,25 @@
     background-color: #2f3e51;
     padding: 20px 20px 0;
     color: #ffffff;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    }
+
     .group {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
       &__group-name {
         font-size: 15px;
+        color:#ffffff;
       }
       &__latest-message {
           font-size: 11px;
           padding-top: 5px;
-      }
+          color:#ffffff;
+      
     }
   }
 }

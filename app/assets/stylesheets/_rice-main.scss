@@ -42,26 +42,31 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    & form{
-      display: flex;
+    display: flex;
+      .new_message {
+        display: flex;
+        width: 100%;
+      }
       .input-box {
         position: relative;
         width: 100%;
         display: flex;
-          input {
+        .input-box__text {
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
           color: #434a54;
-          border-style: none;}
-           label {
+          border-style: none;
+        }
+          label {
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
             right: 10px;
             cursor: pointer;
-             .input-box__image__file {
-             display: none;
+          .input-box__image__file {
+            display: none;
+              
             }
           }
         }
@@ -73,7 +78,7 @@
         background-color: #38aef0;
         color: white;
         cursor: pointer;
-      }  
+    
     }
   }  
 }
