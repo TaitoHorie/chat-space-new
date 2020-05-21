@@ -14,4 +14,4 @@ CarrierWave.configure do |config|
 
   config.fog_directory  = 'gyoza'
   config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/gyoza'
-end
+end   
