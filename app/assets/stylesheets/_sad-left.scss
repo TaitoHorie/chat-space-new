@@ -37,24 +37,24 @@
       color: #ffffff;
       text-decoration: none;
     }
-  
-    }
-
     .group {
-      color: #ffffff;
-      text-decoration: none;
-      &__group-name {
-        font-size: 15px;
+      margin-bottom: 40px;
+
+      &__name {
         color:#ffffff;
-      }
-      &__latest-message {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+      
+      &__message {
           font-size: 11px;
           padding-top: 5px;
           color:#ffffff;
-      
+      }
     }
   }
 }
+
 * {
   box-sizing: border-box;
 }

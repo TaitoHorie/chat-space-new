@@ -1,19 +1,20 @@
 .sad-left
- .left-header
-  .left-header__box
-   %p.left-header__box__user-name 
-    = current_user.name
-   %ul.left-header__box__menu
-    %li.left-headar__box__edit-user
-     = link_to new_group_path do
-      = icon('fa', 'edit')
-    %li.left-headar__box__new-group
-     = link_to edit_user_path(current_user.id) do
-      = icon('fas', 'cog', class: 'icon')
- .groups
-  - current_user.groups.each do |group|
-   = link_to group_messages_path(group) do
-    .group__name
-     = group.name
-    .group__message
-     = group.show_last_message
+  .left-header
+    .left-header__box
+      %p.left-header__box__user-name 
+        = current_user.name
+      %ul.left-header__box__menu
+        %li.left-headar__box__edit-user
+          = link_to new_group_path do
+            = icon('fa', 'edit')
+        %li.left-headar__box__new-group
+          = link_to edit_user_path(current_user.id) do
+            = icon('fas', 'cog', class: 'icon')
+  .groups  
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .group
+          %p.group__name
+            = group.name
+          %P.group__message
+            = group.show_last_message
